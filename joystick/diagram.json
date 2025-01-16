@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 29.4, "left": -19.8, "attrs": {} },
+    { "type": "wokwi-analog-joystick", "id": "joystick1", "top": 268.2, "left": 255, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 257.2, "left": -19.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "joystick1:HORZ", "uno:A0", "green", [ "h-67.2", "v-163.1" ] ],
+    [ "joystick1:VERT", "uno:A1", "green", [ "h-76.8", "v-163.1" ] ],
+    [ "servo1:GND", "uno:GND.2", "black", [ "h0" ] ],
+    [ "servo1:V+", "uno:5V", "green", [ "h0" ] ],
+    [ "servo1:PWM", "uno:9", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
